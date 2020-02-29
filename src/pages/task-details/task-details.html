@@ -1,0 +1,201 @@
+<!--
+  Generated template for the TaskDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Buyer Info</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+     <div style="padding: 20px">  
+        <div class="text-center">
+          <div class="round_div">
+             <!-- <img src="./img/logo.jpg" style="width: 100px;"> -->
+          </div>
+        <h4>{{enquiryDetails.name}}</h4>
+        <h5>{{enquiryDetails.email}}</h5>
+        
+        
+        </div>
+        <ion-icon name="call-outline"></ion-icon>
+        <div class="list">        
+         <a href="tel:{{enquiryDetails.phone}}" style="color: white"> <div class="item item-button-right">
+            {{enquiryDetails.phone}}
+            <ion-icon name="call-outline"></ion-icon>
+            <button class="button button-positive">
+              <i><img src="../../assets/imgs/call-outline.svg" height="35px" width="35px" style="margin-top:10px-"></i>             
+            </button>
+          </div>
+          </a>        
+        </div>
+    </div>
+    <div style="background-color: white">
+        <h4>Cars Prefered</h4>
+        <div class="row">        
+          <div class="col col-33">
+            <div class="card ourcard">
+        
+            <!-- <img src="./img/bmw.png"> -->
+            <!-- <h2>Pretty Hate Machine</h2> -->
+            <h3 style="color: red">1</h3>
+            <h4>{{enquiryDetails.car1}}</h4>
+            <h4>{{enquiryDetails.variant1}}</h4>
+            
+         
+          </div>
+          </div>
+        
+          <div class="col col-33">
+            <div class="card ourcard">
+            <!-- <img src="./img/benz.png"> -->
+            <!-- <h2>Pretty Hate Machine</h2> -->
+            <h3 style="color: orange">2</h3>
+            <h4>{{enquiryDetails.car2}}</h4>
+            <h4>{{enquiryDetails.variant2}}</h4>
+          </div>
+          </div>
+        
+          <div class="col col-33">
+            <div class="card ourcard">
+            <!-- <img src="./img/audi.png"> -->
+            <!-- <h2>Pretty Hate Machine</h2> -->
+            <h3 style="color: lightblue">3</h3>
+            <h4>{{enquiryDetails.car3}}</h4>
+            <h4>{{enquiryDetails.variant3}}</h4>
+          </div>
+          </div>
+        </div>
+    </div>    
+    <div style="padding: 15px;">
+        <table style="width: 100%" class="det_table">
+	    		
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Location</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.location}}</p>
+	    				</td>
+	    				
+	    			</tr>
+
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Vehicle 1</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.car1}} {{enquiryDetails.varient1}}</p>
+	    				</td>
+	    				
+	    			</tr>
+
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Vehicle 2</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.car2}} {{enquiryDetails.varient2}}</p>
+	    				</td>
+	    				
+	    			</tr>
+
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Year Above</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.year1}}</p>
+	    				</td>
+	    				
+	    			</tr>
+
+	    			<!-- <tr>
+	    				<td class="first_col">
+	    					<p>Email</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>jobincs@gmail.com</p>
+	    				</td>
+	    				
+	    			</tr> -->
+
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Color Not Prefered</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.color1}}</p>
+	    				</td>
+	    				
+	    			</tr>
+
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>No. not prefered</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.number1}}</p>
+	    				</td>
+	    				
+	    			</tr>
+
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Deciding Time</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.deciding_time}}</p>
+	    				</td>
+	    				
+	    			</tr>
+
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Finance</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.finance}}</p>
+	    				</td>
+	    				
+	    			</tr>
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Source</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{enquiryDetails.source}}</p>
+	    				</td>
+	    				
+	    			</tr>
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Car Available</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>Yes</p>
+	    				</td>
+	    				
+	    			</tr>
+	    			
+	    			
+          </table>
+          <div>
+          <button class="button button-block button-stable" (click)="precom({taskid: enquiryDetails.id})">Prev Comments</button>
+        </div>
+          <label class="item item-input item-stacked-label">
+    <!-- <span class="input-label">Executive Comment</span> -->
+    <textarea rows="5" placeholder="Enter comments" [(ngModel)]="comment" required></textarea>
+  </label>
+   <!-- <label class="item item-input item-stacked-label">
+    <span class="input-label">Added Date</span>
+    <input type="datetime-local" placeholder="" [(ngModel)]="enquiryDetails.added_date" [ngInit]={{now}}>
+  </label> -->
+
+<button class="button button-block button-positive" type="button"  (click)="buyerformupdate(enquiryDetails.id)">Update</button>
+    
+    </div>
+</ion-content>

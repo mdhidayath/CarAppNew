@@ -1,0 +1,248 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Seller Info</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div style="padding: 20px">  
+        <div class="text-center">
+          <div class="round_div">
+             <!-- <img src="./img/logo.jpg" style="width: 100px;"> -->
+          </div>
+        <h4>{{sellerEnqDetails.name}}</h4>
+        <h5>{{sellerEnqDetails.email}}</h5>
+        
+        
+        </div>
+        <ion-icon name="call-outline"></ion-icon>
+        <div class="list">        
+         <a href="tel:{{sellerEnqDetails.phone}}" style="color: white"> <div class="item item-button-right">
+            {{sellerEnqDetails.phone}}
+            <ion-icon name="call-outline"></ion-icon>
+            <button class="button button-positive">
+              <i><img src="../../assets/imgs/call-outline.svg" height="35px" width="35px" style="margin-top:10px-"></i>             
+            </button>
+          </div>
+          </a>        
+        </div>
+    </div>
+    <div style="padding: 15px;">
+        <table style="width: 100%" class="det_table">
+	    		
+	    			<tr class="border_bottom">
+	    				<td class="first_col">
+	    					<p>Location</p>
+	    				</td>
+	    				<td class="second_col">
+	    					<p>{{sellerEnqDetails.location}}</p>
+	    				</td>
+	    				
+            </tr>
+            <tr class="border_bottom">
+                <td class="first_col">
+                  <p>Deciding Time</p>
+                </td>
+                <td class="second_col">
+                  <p>{{sellerEnqDetails.deciding_time}}</p>
+                </td>
+                
+              </tr>
+            <tr class="border_bottom">
+                <td class="first_col">
+                  <p>Company</p>
+                </td>
+                <td class="second_col">
+                  <p>{{sellerEnqDetails.company}}</p>
+                </td>
+                
+              </tr>
+              <tr class="border_bottom">
+                  <td class="first_col">
+                    <p>Vehicle</p>
+                  </td>
+                  <td class="second_col">
+                    <p>{{sellerEnqDetails.vehicle}}</p>
+                  </td>
+                  
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>varient</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.variant}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Registration No.</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.reg_no}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Kilometer Run</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.km_run}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Color</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.colour}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Owner No.</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.owner_number}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Insurance</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.insurance}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Validity</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.validity}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Year of MFG</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.year_mfg}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Year of Registration</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.year_reg}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Year of Registration</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.year_reg}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Hypothecated</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.hypothecated}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Fuel</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.fuel}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Fuel</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.fuel}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Rc Inspected</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.rc_inspected}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Inspected By</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.inspected_by}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Price Expected</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.price_expected}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Source</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.source}}</p>
+                    </td>
+                    
+                </tr>
+                <tr class="border_bottom">
+                    <td class="first_col">
+                      <p>Warranty/Features</p>
+                    </td>
+                    <td class="second_col">
+                      <p>{{sellerEnqDetails.warranty_features}}</p>
+                    </td>
+                    
+                </tr>
+        </table>
+        <div>
+            <button class="button button-block button-stable" (click)="precom({taskid: sellerEnqDetails.id})">Prev Comments</button>
+        </div>
+        <label class="item item-input item-stacked-label">
+            <!-- <span class="input-label">Executive Comment</span> -->
+            <textarea rows="5" placeholder="Enter comments" [(ngModel)]="comment" required></textarea>
+        </label>
+        <!-- <label class="item item-input item-stacked-label">
+            <span class="input-label">Added Date</span>
+            <input type="datetime-local" placeholder="" ng-model="com.added_date" ng-init="com.added_date=date">
+        </label> -->
+  
+        <button class="button button-block button-positive" type="button"  (click)="sellerformupdate(sellerEnqDetails.id)">Update</button>
+    </div>
+
+</ion-content>

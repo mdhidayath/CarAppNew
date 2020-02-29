@@ -1,0 +1,43 @@
+
+<ion-content class="padding" style="background-image:url(./assets/imgs/mainbg.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;" ng-init="checklogin()">
+ <!-- <ion-spinner *ngIf="showSpinner"></ion-spinner> -->
+ <ion-spinner class="spin" name="bubbles"></ion-spinner>
+ <div class="spin">
+  <ion-spinner name="bubbles"></ion-spinner>
+</div>
+  <div style="text-align: center;padding-top: 40px">
+      <img src="./assets/imgs/logo.png" style="width: 200px">
+  </div>
+  
+    <div  style="margin-top: 40px;padding: 20px;">
+      <ion-list>
+        <ion-item>
+          <ion-input placeholder="user name" [(ngModel)]="username" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="password" type="password" [(ngModel)]="password" required></ion-input>
+        </ion-item>        
+      </ion-list>
+      
+  <!-- <label class="item item-input" style="border-radius: 7px 7px 0 0;">
+    <input style="width:100%" type="text" [(ngModel)]="username" placeholder="Usename">
+  </label>
+  <label class="item item-input" style="border-radius: 0 0 7px 7px;">
+    <input style="width:100%" type="password" [(ngModel)]="password" placeholder="Password">
+  </label>
+<br> -->
+    
+      <button ion-button full (click)="login()" style="border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;">login</button>
+    
+    <!-- <button class="button button-block button-positive" (click)="login()">Loginaaaa</button>
+    <div style="text-align: center;">
+    <a  href="#/admin" class="button  icon-left ion-android-lock button-assertive">Login as admin</a>
+    </div> -->
+     <!-- <a  style="color: white"><h4 style="color: white ;text-align:center;background-color: black" >Login as Admin</h4></a> -->
+
+
+
+       
+<!--        <p ng-repeat="item in ar">{{item}}</p>-->
+</div>
+</ion-content>

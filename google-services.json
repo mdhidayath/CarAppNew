@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "551394742209",
+    "firebase_url": "https://testcarapp-73112.firebaseio.com",
+    "project_id": "testcarapp-73112",
+    "storage_bucket": "testcarapp-73112.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551394742209:android:8db841021a7bae1457e940",
+        "android_client_info": {
+          "package_name": "com.nineth.gear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551394742209-s2jmj3d8tpd34hmr34rc1k8t8tokadm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtUDs5m4DUwg4STGldCRVDFVYADD1By6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551394742209-s2jmj3d8tpd34hmr34rc1k8t8tokadm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

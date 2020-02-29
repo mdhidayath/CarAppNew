@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Enquiries</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    
+    <ion-card *ngFor="let item of taskItems" (click)="TaskDetails($event, item)">
+        <div class="item item-text-wrap" padding="20px">
+            <table style="width: 100%">
+              <tr>
+                <td class="first_col">
+                  
+                </td>
+                <td class="second_col">
+                  <p style="color: #388E3C;font-weight: bold;">{{item.request_type}}</p>
+                </td>
+              </tr>
+              <tr >
+                <td class="first_col" colspan="2">
+                  <h3 class="cus_name">{{item.name}}</h3>
+                </td>
+                
+              </tr>
+              <tr>
+                <td class="first_col">
+                  <h4 class="cus_no">{{item.phone}}</h4>
+                </td>
+                <td class="second_col" *ngIf="item.request_type=='seller_request'">
+                  <h3 class="car">{{item.vehicle}}-{{item.variant}}</h3>
+                </td>
+                <td class="second_col" *ngIf="item.request_type=='buyer_request'">
+                    <h3 class="car">{{item.car1}}-{{item.variant1}}</h3>
+                  </td>
+              </tr>
+              
+            </table>
+          </div>
+      </ion-card>
+  </ion-content>

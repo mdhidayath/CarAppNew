@@ -1,0 +1,153 @@
+<!--
+  Generated template for the AddBuyerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Add Buyer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="validation_form"  (ngSubmit)="onSubmit(validation_form)">
+    <ion-item>
+      <ion-label position="floating" color="primary">Name</ion-label>
+      <ion-input type="text" formControlName="custname" ></ion-input>
+    </ion-item>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validation_messages.custname">
+        <div class="error-message" *ngIf="validation_form.get('custname').hasError(validation.type) && (validation_form.get('custname').dirty || validation_form.get('custname').touched)">
+          <ion-icon name="information-circle-outline"></ion-icon> {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    <ion-item>
+      <ion-label position="floating" color="primary">Contact No</ion-label>
+      <ion-input type="number" formControlName="contactNo" ></ion-input>
+    </ion-item>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validation_messages.contactNo">
+        <div class="error-message" *ngIf="validation_form.get('contactNo').hasError(validation.type) && (validation_form.get('contactNo').dirty || validation_form.get('contactNo').touched)">
+          <ion-icon name="information-circle-outline"></ion-icon> {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    <ion-item>
+      <ion-label position="floating" color="primary">Email</ion-label>
+      <ion-input type="text" formControlName="email" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Company</ion-label>
+      <ion-input type="text" formControlName="company" [(ngModel)]="customerObj.company"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Location</ion-label>
+      <ion-input type="text" formControlName="location"></ion-input>
+    </ion-item>
+    <ion-item>
+      <div color="primary">Vehicle Required</div>
+    </ion-item>
+    <ion-row>
+      <ion-col width-25>
+        <ion-item>
+          <ion-label position="floating" color="primary">Vehicle 1</ion-label>
+          <ion-input type="text" formControlName="vehicle1"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col width-25>
+        <ion-item>
+          <ion-label position="floating" color="primary">Variant 1</ion-label>
+          <ion-input type="text" formControlName="variant1"></ion-input>
+        </ion-item>
+      </ion-col>      
+    </ion-row>
+    <ion-row>
+      <ion-col width-25>
+        <ion-item>
+          <ion-label position="floating" color="primary">Vehicle 2</ion-label>
+          <ion-input type="text" formControlName="vehicle2"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col width-25>
+        <ion-item>
+          <ion-label position="floating" color="primary">Variant 2</ion-label>
+          <ion-input type="text" formControlName="variant2"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-item>
+      <ion-label position="floating" color="primary">Other</ion-label>
+      <ion-input type="text" formControlName="vehicle3"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Year Above</ion-label>
+      <ion-input type="text" formControlName="yearAbove"></ion-input>
+    </ion-item>    
+    <ion-item>
+      <ion-label position="floating" color="primary">Color Not Preferred</ion-label>
+      <ion-input type="text" formControlName="colorNotPreferred"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Number Not Preferred</ion-label>
+      <ion-input type="text" formControlName="numberNotPreferred"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Deciding Time</ion-label>
+      <ion-select formControlName="decidingTime">
+        <ion-option value="ASAP">ASAP</ion-option>
+        <ion-option value="15 Days">15 Days</ion-option>
+        <ion-option value="1 Month">1 Month</ion-option>
+        <!-- <ion-option value="Date">Date</ion-option> -->
+      </ion-select>
+    </ion-item>    
+    <ion-item *ngIf="validation_form.value.decidingTime==='Date'">
+      <ion-label position="floating" color="primary">Select Date</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" formControlName="decidingTime"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Finance</ion-label>
+      <ion-select formControlName="finance" cancelText="Cancel" okText="OK">
+        <ion-option value="Cash">Cash</ion-option>
+        <ion-option value="Self">Self</ion-option>
+        <ion-option value="9th Gear">9th Gear</ion-option>       
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Source</ion-label>
+      <ion-select formControlName="source" cancelText="Cancel" okText="OK">
+        <ion-option value="Walk-in">Walk-in</ion-option>
+        <ion-option value="Internet">Internet</ion-option>
+        <ion-option value="Referral">Referral</ion-option>       
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Car Not Available</ion-label>
+      <ion-toggle formControlName="carNotAvailable" ng-true-value="false" ng-false-value="true" ng-init="validation_form.carNotAvailable=false">
+        Car Not Available
+      </ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Customer Type</ion-label>
+      <ion-select formControlName="customerType" cancelText="Cancel" okText="OK">
+        <ion-option value="Hot">1</ion-option>
+        <ion-option value="Important">2</ion-option>
+        <ion-option value="Ordinary">3</ion-option>       
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Comments</ion-label>
+      <ion-textarea rows="4" formControlName="executivecomments" placeholder="Enter comments here..."></ion-textarea>
+    </ion-item>
+    <ion-row>
+      <ion-col width-25>
+        <button ion-button class="button button-block button-stable"   type="reset">Reset</button>
+      </ion-col>
+      <ion-col width-25>
+        <button ion-button color="primary" class="button button-block" expand="full" type="submit" [disabled]="!validation_form.valid">Submit data</button>
+      </ion-col>      
+    </ion-row>
+    
+  </form>
+    </ion-content>
